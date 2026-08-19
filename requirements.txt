@@ -29,3 +29,4 @@ uv==0.12.5
 wcwidth==0.8.2
 fastapi
 uvicorn[standard]
+requests
