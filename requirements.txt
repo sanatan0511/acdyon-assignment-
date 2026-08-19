@@ -27,3 +27,5 @@ traitlets==5.16.1
 typing_extensions==4.16.0
 uv==0.12.5
 wcwidth==0.8.2
+fastapi
+uvicorn[standard]
