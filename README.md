@@ -1,9 +1,9 @@
                            ## **SARTHI - JOB WEBSITE** ##
 # Note - Hey hi before you start take a look at my live project:- 
- note = it is same website but due to issue with uv and venv less time i have to merge main code with python code (also take ai help to be honest but 99% my work) and front end (full )
+ note = it is same website but due to issue with uv and venv less time i have to merge main code with python code and deploy it on render  and front end (full deploy on netlify ) using another platform from netlify either you eliminate me or not but thank you i've learn alot again thanks!
 * front end sarthi  live link -https://chimerical-brioche-00e5c0.netlify.app/
 * Sarthi job  live link- https://acdyon-assignment-2.onrender.com/
-* 
+  
 
 
 https://github.com/user-attachments/assets/433f1bf2-6682-4b81-856c-acb19e700fee
