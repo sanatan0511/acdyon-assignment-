@@ -14,11 +14,11 @@ A production-ready job search platform that scrapes LinkedIn and Wellfound while
 
 # Clone & install
 git clone https://github.com/yourusername/job-search-platform.git
-cd job-search-platform
+cd acdyon-assignment-
 pip install -r requirements.txt
 
 # Run
-uvicorn Homepage1:app --reload
+uvicorn main:app --reload
 
 # Open
 http://localhost:8000
