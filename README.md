@@ -1,4 +1,7 @@
-# Decisions
+# Decisions - Hey hi before you start take a look at my live project:- 
+ note = it is same website but due to issue with uv and venv less time i have to merge main code with python code (also take ai help to be honest but 99% my work) and front end (full )
+* front end -https://chimerical-brioche-00e5c0.netlify.app/
+* Sarthi job - https://acdyon-assignment-2.onrender.com/
 
 ## 1. Why this ingestion strategy?
 
