@@ -1,5 +1,7 @@
 # DECISIONS.md
-
+ note = it is same website but due to issue with uv and venv less time i have to merge main code with python code (also take ai help to be honest but 99% my work) and front end (full )
+* front end -https://chimerical-brioche-00e5c0.netlify.app/
+* Sarthi job - https://acdyon-assignment-2.onrender.com/
 ## 1. Why this ingestion strategy?
 
 I chose a public, low-risk job source for the live demo instead of directly scraping a live LinkedIn account. The challenge specifically asks the live demo to use a public job-board RSS/API or a sandbox, so I wanted to demonstrate the ingestion system without creating unnecessary account, IP, or Terms-of-Service risk.
