@@ -4,7 +4,9 @@
 
 I chose a public, low-risk job source for the live demo instead of directly scraping a live LinkedIn account. The challenge specifically asks the live demo to use a public job-board RSS/API or a sandbox, so I wanted to demonstrate the ingestion system without creating unnecessary account, IP, or Terms-of-Service risk.
 
-The application separates ingestion from the rest of the search pipeline. A source adapter is responsible for fetching jobs, validating the response, and converting the source-specific fields into a common job schema. The normalized jobs then go through deduplication, filtering, and relevance ranking before being returned by the FastAPI API.
+Another risk is naukri.com when fetching it become very difficult for me to handle the website and its content .
+
+The application separates ingestion from the rest of the search pipeline. A source adapter is responsible for fetching jobs, validating the response, and converting the source-specific fields into a common job schema. The normalized jobs then go through deduplication, filtering, and relevance ranking before being returned by the Fast API API.
 
 I rejected browser automation as the primary approach because it would add another layer of complexity without being necessary for the permitted live demo. For a source that provides structured public data, an HTTP client is simpler, cheaper, easier to test, and less fragile than controlling a browser.
 
@@ -34,6 +36,11 @@ With a real week, I would move ingestion into scheduled background workers, pers
 
 I used AI tools during development for code exploration, debugging suggestions, implementation alternatives, and reviewing parts of the ingestion and frontend logic.
 
+I used AI in scraping naukri as it is very difficult it take me around 6 hours but did not successful so add two sources one from pydantic and another from 
+linkdin.
+
+Also I do not have free plan in railway or pythonanywhere or any other platform. also problem arises in folder structure as i mix it with uv init and venv enviroment result in which i have to take help and use ai to mix html in main.py but whole idea is my .if you have any doubt you may ask .also this project has two page one which i want to add but donot and second mix uv and venv .I am sorry but i learn very much from this project 
+
 I personally verified the generated code by running the application, inspecting HTTP responses, checking parsed job fields, testing filters and failure cases, and changing implementation details where the generated solution did not match the challenge requirements.
 
 One important verification step was reviewing the challenge's scope guardrail rather than assuming that technically working scraping code was automatically appropriate for the submission. The final live demo therefore uses a permitted low-risk source rather than relying on a live LinkedIn account.
@@ -44,6 +51,27 @@ I would not attempt to bypass CAPTCHA, defeat bot detection, use stolen or authe
 
 The goal of the project is to demonstrate reliable ingestion engineering, not to defeat a platform's security or access controls. If a source blocks the application or changes its access policy, the system should recognize the source as unavailable and switch to an allowed fallback rather than escalating the evasion techniques.
 
+Resilience Strategy:
+├── Primary: LinkedIn + Wellfound (async scraping)
+├── Fallback 1: Alternative URL patterns
+├── Fallback 2: HireHunt library (5+ sources)
+└── Fallback 3: Local fallback data
 
 
 ###  Note - Search time as comapre to other - 10s max and also tf-idf and microsoft layout i do as much as possible .as i have to face alot of challanges  
+
+### Advantage- 
+* aiohttp over requests for async scraping
+
+* Pydantic for validation over manual checks
+
+* HireHunt as fallback (not primary)
+
+* TF-IDF resets per search
+
+* SKILL_ALIASES maps Python → Django/Flask/FastAPI
+
+* concurrent_requests=10 (tested optimal)
+
+* cache TTL=3600 (balance fresh vs blocked)
+
