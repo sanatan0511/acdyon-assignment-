@@ -4,7 +4,7 @@
 * front end -https://chimerical-brioche-00e5c0.netlify.app/
 * Sarthi job - https://acdyon-assignment-2.onrender.com/
 * 
-  ![]()
+  ![](Screen Recording 2026-08-19 172024.mp4)
 
 🚀 Acdyon Technologies - Frontend Challenge Submission
 "Build It Like You Mean It"
