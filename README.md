@@ -1,10 +1,14 @@
                            ## **SARTHI - JOB WEBSITE** ##
 # Note - Hey hi before you start take a look at my live project:- 
  note = it is same website but due to issue with uv and venv less time i have to merge main code with python code (also take ai help to be honest but 99% my work) and front end (full )
-* front end -https://chimerical-brioche-00e5c0.netlify.app/
-* Sarthi job - https://acdyon-assignment-2.onrender.com/
+* front end sarthi  live link -https://chimerical-brioche-00e5c0.netlify.app/
+* Sarthi job  live link- https://acdyon-assignment-2.onrender.com/
 * 
-![Uploading image.png…]()
+
+
+https://github.com/user-attachments/assets/433f1bf2-6682-4b81-856c-acb19e700fee
+
+<img width="1911" height="870" alt="image" src="https://github.com/user-attachments/assets/c95f24f9-1db4-4326-bd01-bddb8132f383" />
 
 🚀 Acdyon Technologies - Frontend Challenge Submission
 "Build It Like You Mean It"
