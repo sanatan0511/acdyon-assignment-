@@ -30,3 +30,6 @@ wcwidth==0.8.2
 fastapi
 uvicorn[standard]
 requests
+bs4
+aiohttp
+hirehunt
